@@ -11,5 +11,16 @@
   <% include partials/nav.ejs %>
   <h1>Contact Us!</h1>
 <p> Contact the coolest cats right here...</p>
+
+<form id = "contact-form">
+  <label for = "who">Who do you want to contact?</label><br><br>
+  <input type="text" name = "who" value="<%= qs.person%>"/><br><br>
+  <label for = "department">Which department?</label><br><br>
+  <input type="text" name="department" value="<%= qs.dept%>"/><br><br>
+  <label for = "email">Your email?</label><br><br>
+  <input type="email" name="email"/><br><br>
+  <input type = "submit" value="Submit"/>
+</form>
+
 </body>
 </html>
